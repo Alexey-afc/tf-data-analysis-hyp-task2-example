@@ -6,5 +6,5 @@ chat_id = 543286418 # Ваш chat ID, не меняйте название пе�
 
 def solution(x: np.array, y: np.array) -> bool:
     alpha = 0.05
-    statistic, pvalue = cramervonmises_2samp(x, y)
+    pvalue = cramervonmises_2samp(x, y)[1]
     return pvalue < alpha
